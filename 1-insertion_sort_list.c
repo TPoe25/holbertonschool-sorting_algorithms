@@ -23,7 +23,7 @@ void insertion_sort_list(listint_t **list)
 				temp_node->next->prev = prev_node;
 			prev_node->next = temp_node->next;
 			temp_node->prev = prev_node->prev;
-	
+
 			if (temp_node->prev != NULL)
 				temp_node->prev->next = temp_node;
 
