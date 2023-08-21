@@ -39,7 +39,7 @@ int partition(int *array, int low, int high, size_t size)
 {
 	int pivot, i, j, temp;
 
-	pivot = array[high];
+	pivot = array[low + (high - low) / 2];
 	i = low - 1;
 
 	for (j = low; j <= high - 1; j++)
